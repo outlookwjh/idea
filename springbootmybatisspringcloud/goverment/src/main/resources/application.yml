@@ -1,0 +1,18 @@
+server:
+  port: ${PORT0:10002}
+
+spring:
+  application:
+    name: goverment-center
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl: #Eureka客户端与Eureka服务端的交互地址，高可用状态配置对方的地址，单机状态配置自己（如果不配置则默认本机8761端口）
+      defaultZone: http://127.0.0.1:${PORT1}/eureka,http://127.0.0.1:${PORT2}/eureka
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 6000
+  instance:
+    hostname: instances1

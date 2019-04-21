@@ -1,0 +1,28 @@
+server:
+  port: ${Port:20001}
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql:///test?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+  #redis配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  application:
+    name: controller
+mybatis:
+  mapper-locations: classpath:mapper/Dao.xml
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+       defaultZone: http://127.0.0.1:10000/eureka,http://127.0.0.1:10001/eureka,http://127.0.0.1:10002/eureka
+  instance:
+    prefer-ip-address: true
+
+
+
+
