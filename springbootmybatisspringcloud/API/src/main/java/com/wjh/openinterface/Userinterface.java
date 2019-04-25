@@ -2,8 +2,13 @@ package com.wjh.openinterface;
 
 import com.wjh.commons.ResultEntity;
 import io.swagger.annotations.Api;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Api(value="cms页面管理接口",description="cms页面管理接口，提供页面的增、删、改、查")
+@FeignClient("controller")
+@Service
 public interface Userinterface {
 
 
@@ -23,7 +28,7 @@ public interface Userinterface {
      * 查找所有记录
      * @return
      */
-
+    @GetMapping("/get")
     public ResultEntity get();
 
     /**
