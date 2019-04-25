@@ -1,0 +1,18 @@
+server.port: 8084
+#配置服务名，不配置的话，注册中心显示为UnKnown
+spring.application.name: SpringCloudGateway
+#配置注册中心地址，不配置的话，程序启动会失败
+eureka.client.service-url.defaultZone: http://localhost:8080/eureka/
+spring.cloud.gateway.routes:
+    -   id: host_route
+        uri: lb://CustomService
+        predicates:
+        - Path=/**
+        filters:
+        - StripPrefix=2
+#    -   id: host_route
+#        uri: http://localhost:8082
+#        predicates:
+#        - Path=/b/**
+#        filters:
+#        - StripPrefix=1

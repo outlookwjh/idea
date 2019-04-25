@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ApiGateWay/ApiGateWay.iml" filepath="$PROJECT_DIR$/ApiGateWay/ApiGateWay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AuthenticationServer/AuthenticationServer.iml" filepath="$PROJECT_DIR$/AuthenticationServer/AuthenticationServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomService/CustomService.iml" filepath="$PROJECT_DIR$/CustomService/CustomService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudGateway/SpringCloudGateway.iml" filepath="$PROJECT_DIR$/SpringCloudGateway/SpringCloudGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudTest.iml" filepath="$PROJECT_DIR$/SpringCloudTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eurekatest/eurekatest.iml" filepath="$PROJECT_DIR$/eurekatest/eurekatest.iml" />
+    </modules>
+  </component>
+</project>

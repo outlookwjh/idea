@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ApiGateWay" />
+        <module name="AuthenticationServer" />
+        <module name="CustomService" />
+        <module name="eurekatest" />
+        <module name="SpringCloudGateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ApiGateWay" target="1.8" />
+      <module name="ApiGateWay2" target="1.8" />
+      <module name="AuthenticationServer" target="1.8" />
+      <module name="CustomService" target="1.8" />
+      <module name="eurekatest" target="1.8" />
+      <module name="EurekaTest" target="1.8" />
+      <module name="SpringBootGateway" target="1.8" />
+      <module name="SpringCloudGateway" target="1.8" />
+      <module name="SpringCloudTest" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
